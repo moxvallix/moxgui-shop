@@ -1,0 +1,68 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Cost: ",
+        "color": "white",
+        "italic": false,
+        "extra": [
+          {
+            "score": {
+              "name": "$cost",
+              "objective": "shop.currency"
+            },
+            "italic": false,
+            "extra": [
+              {
+                "text": " ",
+                "extra": [
+                    {
+                        "nbt": "name",
+                        "storage": "shop:currency"
+                    }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "Can Afford",
+        "color": "green",
+        "italic": false
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:reference",
+        "name": "shop:affordable"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "Can't Afford",
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "conditions": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:reference",
+          "name": "shop:affordable"
+        }
+      }
+    ]
+  }
+]

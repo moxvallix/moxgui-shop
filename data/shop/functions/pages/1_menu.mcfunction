@@ -1,0 +1,2 @@
+# Menu template
+data modify storage gui:page template set value [{slot:12b,page:2s,item:{id:"minecraft:grass_block",tag:{display:{Name:'{"text":"Blocks","italic":false}',Lore:['{"text":"Purchase blocks","color":"green","italic":false}']}}}},{slot:14b,page:3s,item:{id:"minecraft:diamond_pickaxe",tag:{display:{Name:'{"text":"Items","italic":false}',Lore:['{"text":"Purchase items","color":"green","italic":false}']}}}}]

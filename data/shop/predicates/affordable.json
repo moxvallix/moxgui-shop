@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "$balance"
+    },
+    "score": "shop.currency"
+  },
+  "range": {
+    "min": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "$cost"
+      },
+      "score": "shop.currency"
+    }
+  }
+}
